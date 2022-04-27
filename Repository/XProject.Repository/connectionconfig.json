@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "Development": "Data Source=45.119.82.72;Initial Catalog=NameDB;User ID=hutech_intern;Password=123qwe;Trusted_Connection=False;MultipleActiveResultSets=True"
+  }
+}
