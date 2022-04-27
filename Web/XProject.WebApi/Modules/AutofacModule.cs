@@ -13,6 +13,13 @@ namespace XProject.WebApi.Modules
         {
             var mq = SystemHelper.Configs.GetSection<RabbitMqSettings>("RabbitMqSettings");
             builder.Register(c => new RabbitMqService(mq)).As<IQueueService>().SingleInstance();
+            //builder.Register(_ => new MapperConfiguration(cfg =>
+            //{
+            //    cfg.AddProfile(new TransactionProfile());
+            //    cfg.AddProfile(new UserProfile());
+            //    cfg.AddProfile(new SubscriptionProfile());
+            //}).CreateMapper())
+            //    .SingleInstance();
             RegisterQueue(builder);
         }
 
